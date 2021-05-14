@@ -2,4 +2,155 @@
 }
 
 html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #837960;
+    background: url(img/clouds.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-animation: fade-in 1s ; /* Chrome, Safari, Opera */
+    animation: fade-in 1s ;
+    transition: 1s ease-in-out;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+input {
+    height: 20px;
+}
+
+button {
+    border: 1px solid #555;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}    
+
+#error-message {
+    margin: 1rem auto -1.5rem auto;
+    text-align: center;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+#search-button img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+
+
+#search-area {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+}
+
+#top-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#weather-result-container {
+    margin-right: 1rem;
+}
+
+#city {
+    font-size: 40px;
+    margin-left: -.2rem;
+}
+
+#city:first-letter {
+    text-transform: uppercase; 
+}
+
+#climate {
+    font-size: 12px;
+    margin-top: .2rem;
+    margin-left: .1rem;
+}
+
+#climate:first-letter {
+    text-transform: uppercase; 
+}
+
+#current-weather-image-container {
+    margin-left: 1rem;
+}
+
+#temp {
+    margin-top: .2rem;
+    font-size: 36px;
+}
+
+#high {
+    margin-top: .2rem;
+    font-size: 12px;
+}
+
+#low {
+    font-size: 12px;
+}
+
+#feels-like {
+    font-size: 12px;
+}
+
+#humidity {
+    font-size: 12px;
+}
+
+#pop {
+    font-size: 12px;
+}
+
+#current-weather-image-container > img {
+    height: 125px;
+    width: 125px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(5px 5px 5px #222222);
+}
+
+#bottom-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#weather-hours-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#weather-days-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.temp-hours-element {
+    padding: 1rem;
+}
+
+.temp-days-element {
+    padding: 1rem;
 }
